@@ -41,7 +41,7 @@ export default function Home() {
               AI-powered fitness app to help you track your daily diet to stay
               fit. 
               </p>
-              <p>Snap a photo, (or scan the barcode) your meal to instantly
+              <p>Snap a photo of (or scan the barcode) your meal to instantly
               track calories, nutrients, and your daily intake.
               </p>
             <WaitlistForm initialCount={count} />
