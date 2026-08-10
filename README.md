@@ -37,7 +37,7 @@ cp .env.example .env
 - `ADMIN_USERNAME`
 - `ADMIN_PASSWORD`
 - `ADMIN_SESSION_SECRET`
-- `NEXT_PUBLIC_SITE_URL` (your public URL, e.g. `https://wodoo.app`)
+- `NEXT_PUBLIC_SITE_URL` (production: `https://www.wodoo.live`)
 
 3. Build and start:
 

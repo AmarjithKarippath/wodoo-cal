@@ -165,7 +165,7 @@ a {
   line-height: 0.9;
   letter-spacing: -0.06em;
   font-weight: 800;
-  color: var(--ink);
+  color: var(--accent);
   animation: rise 800ms ease both;
 }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
+import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-68S6SKWY4H";
@@ -24,9 +25,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ),
+  metadataBase: new URL(getSiteUrl()),
   title: "Wodoo — Track your calories with just a picture",
   description:
     "AI-powered fitness app to help you track your daily diet. Snap a photo or scan a barcode to track calories, nutrients, and daily intake. Join the Wodoo waitlist.",
