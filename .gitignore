@@ -29,6 +29,11 @@
 *.db
 *.db-*
 
+# expo app deps/build
+wodoo-app/node_modules
+wodoo-app/.expo
+wodoo-app/dist
+
 # debug
 npm-debug.log*
 yarn-debug.log*

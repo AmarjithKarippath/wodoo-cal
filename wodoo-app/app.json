@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Wodoo",
+    "slug": "wodoo-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "live.wodoo.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Wodoo needs camera access to scan your meals and estimate nutrition.",
+        "NSPhotoLibraryUsageDescription": "Wodoo needs photo library access so you can analyze meals from your gallery."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F0704F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "live.wodoo.app",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Wodoo to access your camera to scan meals.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Wodoo to access your photos to analyze meals."
+        }
+      ]
+    ]
+  }
+}
